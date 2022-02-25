@@ -1,0 +1,33 @@
+@import "~bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fontes/Poppins/Poppins-Regular.ttf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: "Poppins Regular";
+}
+
+body {
+  height: 100%;
+  font-family: "Poppins Regular";
+}
+
+#root {
+  display: flex;
+}
+
+@import "./config.scss";
+@import "./login.scss";
+@import "./header.scss";
+@import "./home.scss";

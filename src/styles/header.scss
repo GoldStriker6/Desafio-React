@@ -1,0 +1,56 @@
+@import "./config.scss";
+
+.menu {
+
+    .container-menu-superior {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 12px;
+
+        position: absolute;
+        width: 1440px;
+        height: 72px;
+        left: 0px;
+        top: 0px;
+
+        background: #FFFFFF;
+
+        .zona-segura {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px;
+
+            position: static;
+            width: 1416px;
+            height: 51.67px;
+            left: 12px;
+            top: 10.16px;
+
+            flex: none;
+            order: 0;
+            flex-grow: 1;
+            margin: 0px 166px;
+
+            .menu-home {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                            
+                position: static;
+                width: 184.12px;
+                height: 51.67px;
+                left: 0px;
+                top: 0px;
+                            
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 0px 24px;
+            }
+        }
+    }
+}

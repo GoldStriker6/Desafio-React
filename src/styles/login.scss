@@ -1,0 +1,460 @@
+@import "./config.scss";
+
+.container-login {
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+
+  .logo {
+    position: absolute;
+    width: 159px;
+    height: 36px;
+    left: 36px;
+    top: 35px;
+  }
+
+  .frame-entrar {
+    position: absolute;
+    width: 475px;
+    height: 470px;
+    left: 20%;
+    right: 20%;
+    top: 168px;
+
+    .frame-bemvindo {
+      position: static;
+      width: 384px;
+      height: 88px;
+      left: 0px;
+      top: 0px;
+
+      h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        color: $titleGrayColor;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 10px 0px;
+      }
+
+      h5 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .frame-login {
+      position: static;
+      width: 475px;
+      height: 301px;
+      left: 0px;
+      top: 169px;
+
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      margin: 81px 0px;
+
+      .frame-login-interno {
+        position: static;
+        width: 475px;
+        height: 257px;
+        left: 0px;
+        top: 0px;
+
+        .input-email {
+          position: static;
+          width: 475px;
+          height: 70px;
+          left: 0px;
+          top: 0px;
+
+          .titulo {
+            position: static;
+            width: 46px;
+            height: 18px;
+            left: 0px;
+            top: 0px;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin: 4px 0px;
+
+            h6 {
+              position: static;
+              width: 45px;
+              height: 18px;
+              left: 0px;
+              top: 0px;
+
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 18px;
+
+              display: flex;
+              align-items: center;
+
+              color: $titleGrayColor;
+            }
+
+            label {
+              color: #9eaae1;
+            }
+          }
+
+          .email {
+            input {
+              position: relative;
+              padding: 12px 50px;
+
+              position: relative;
+              width: 475px;
+              height: 48px;
+              left: 0px;
+              top: -28px;
+              outline: none;
+              background: transparent;
+
+              border: 1px solid #d9dae1;
+              box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+              border-radius: 4px;
+
+              flex: none;
+              order: 1;
+              flex-grow: 0;
+              margin: 4px 0px;
+
+              &:focus {
+                border-color: $secondaryColor;
+              }
+            }
+
+            img {
+              position: relative;
+              width: 24px;
+              height: 24px;
+              left: 16px;
+              top: 12px;
+
+              margin: 0px 12px 0px 0px;
+            }
+          }
+        }
+
+        .input-senha {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          padding: 0px;
+
+          position: static;
+          width: 475px;
+          height: 80px;
+          left: 0px;
+          top: 92px;
+          margin: 22px 0px;
+
+          .titulo {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+
+            position: static;
+            width: 44px;
+            height: 18px;
+            left: 0px;
+            top: 0px;
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin: 4px 0px;
+
+            h6 {
+              position: static;
+              width: 45px;
+              height: 18px;
+              left: 0px;
+              top: 0px;
+
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 18px;
+
+              display: flex;
+              align-items: center;
+
+              color: $titleGrayColor;
+            }
+
+            label {
+              color: #9eaae1;
+            }
+          }
+
+          .senha {
+            input {
+              display: flex;
+              padding: 12px 12px 12px 50px;
+              position: relative;
+              width: 175px;
+              height: 40px;
+              left: 0px;
+              top: -24px;
+              outline: none;
+              background: transparent;
+
+              border: 1px solid #d9dae1;
+              box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+              border-radius: 4px;
+
+              flex: none;
+              order: 1;
+              flex-grow: 0;
+              margin: 4px 0px;
+
+              &:focus {
+                border-color: $secondaryColor;
+              }
+            }
+
+            img {
+              position: relative;
+              width: 24px;
+              height: 24px;
+              left: 16px;
+              top: 12px;
+
+              margin: 0px 12px 0px 0px;
+            }
+          }
+        }
+
+        .botao {
+          flex: none;
+          order: 2;
+          align-self: stretch;
+          flex-grow: 0;
+          margin: 22px 0px;
+
+          button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 16px;
+
+            position: static;
+            width: 475px;
+            height: 43px;
+            left: 0px;
+            top: 0px;
+
+            background: $secondaryColor;
+            border-radius: 4px;
+            border-color: $secondaryColor;
+
+            flex: none;
+            order: 0;
+            align-self: stretch;
+            flex-grow: 0;
+            margin: 8px 0px;
+
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 19px;
+            color: white;
+          }
+          .esqueci {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0px;
+
+            position: static;
+            width: 475px;
+            height: 18px;
+            left: 0px;
+            top: 51px;
+
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 0;
+            margin: 8px 0px;
+
+            h6 {
+              position: static;
+              width: 129px;
+              height: 18px;
+              left: 346px;
+              top: 0px;
+
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 18px;
+
+              display: flex;
+              align-items: center;
+              text-align: right;
+
+              color: #3e3f44;
+
+              flex: none;
+              order: 0;
+              flex-grow: 0;
+              margin: 0px 10px;
+
+              a {
+                color: #3e3f44;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+
+      h5 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+
+        align-items: center;
+        text-align: center;
+
+        color: #828292;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 23px 0px;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.container-metade-direita {
+  position: absolute;
+  width: 55%;
+  height: 100%;
+  left: 45%;
+  top: 0px;
+
+  background: #e9ebf5;
+
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 490px;
+    height: 674px;
+    left: 260px;
+    top: 95px;
+
+    img {
+      position: static;
+      width: 390px;
+      height: 492.35px;
+      left: 50px;
+      top: 9.83px;
+
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 46px 0px;
+    }
+
+    .explicacao {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
+
+      position: static;
+      width: 358px;
+      height: 116px;
+      left: 33.5px;
+      top: 548.17px;
+
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      margin: 46px 0px;
+
+      .principal {
+        position: static;
+        width: 423px;
+        height: 27px;
+        left: 0px;
+        top: 0px;
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 27px;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: $titleGrayColor;
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 20px 0px;
+      }
+
+      .secundario {
+        position: static;
+        width: 423px;
+        height: 69px;
+        left: 0px;
+        top: 47px;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #828292;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 20px 0px;
+      }
+    }
+  }
+}
